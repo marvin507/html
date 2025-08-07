@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inversiones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .inversiones-section {
+      display: flex;
+      background-color: #111;
+      color: white;
+      height: 553px;
+    }
+
+    .texto {
+      flex: 1;
+      padding: 40px 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .fondo-derecho {
+      width: 713px;
+      background-image: url('ruta/a/tu/imagen.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .check-icon::before {
+      content: "✔️ ";
+      margin-right: 8px;
+    }
+
+    .nota {
+      font-size: 0.85rem;
+      color: #bbb;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 992px) {
+      .inversiones-section {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .fondo-derecho {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="inversiones-section">
+  
+  <!-- Texto a la izquierda -->
+  <div class="texto">
+    <h2 class="mb-4">Inversiones según su perfil</h2>
+    <ul class="list-unstyled">
+      <li class="mb-2 check-icon">Identificamos sus necesidades financieras</li>
+      <li class="mb-2 check-icon">Revisamos su perfil y las políticas de inversión</li>
+      <li class="mb-2 check-icon">Evaluamos los modelos de portafolio de inversión</li>
+      <li class="mb-2 check-icon">Seleccionamos productos y vehículos de inversión</li>
+      <li class="mb-2 check-icon">Creamos y evaluamos su portafolio</li>
+      <li class="mb-2 check-icon">Monitoreamos su portafolio</li>
+      <li class="mb-2 check-icon">Realizamos rebalanceo de portafolio</li>
+    </ul>
+    <p class="nota">(*) Disponibilidad y condiciones sujetas al país de residencia.</p>
+  </div>
+
+  <!-- Imagen de fondo a la derecha -->
+  <div class="fondo-derecho"></div>
+  
+</div>
+
+</body>
+</html>
